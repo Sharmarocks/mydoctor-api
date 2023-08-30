@@ -7,9 +7,12 @@ exports.up = function (knex) {
     table.increments("id").primary();
     table.string("name").notNullable();
     table.string("specialization").notNullable();
-    table.VARCHAR("address", 255).notNullable();
+    table.string("address", 255).notNullable();
     table.decimal("rating").notNullable();
+    table.text("bio").notNullable();
+    table.binary("image");
 
+    table.timestamp("created_at").defaultTo(knex.fn.now());
     table
       .timestamp("updated_at")
       .defaultTo(knex.raw("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"));

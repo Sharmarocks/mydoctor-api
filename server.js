@@ -1,6 +1,12 @@
 const express = require("express");
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 5050;
+// const cors = require("cors");
+// app.use(cors());
+
+const doctorRoutes = require("./routes/doctor-routes");
+
+app.use("/api/doctors", doctorRoutes);
 
 app.get("/", (req, res) => {
   console.log("Welcome to the server");
