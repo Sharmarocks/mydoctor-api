@@ -10,7 +10,7 @@ app.use("/api/doctors", doctorRoutes);
 
 app.get("/", (req, res) => {
   console.log("Welcome to the server");
-  res.send("Welcome to the serverrrr");
+  res.send("Welcome to the server");
 });
 
 app.listen(PORT, () => {
