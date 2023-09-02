@@ -7,8 +7,10 @@ app.use(cors());
 app.use(express.static("public"));
 
 const doctorRoutes = require("./routes/doctor-routes");
+const userRoutes = require("./routes/user-routes");
 
 app.use("/api/doctors", doctorRoutes);
+app.use("/api/users", userRoutes);
 
 app.get("/", (req, res) => {
   res.send("Welcome to the server");
