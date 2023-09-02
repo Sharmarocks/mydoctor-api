@@ -13,7 +13,7 @@ exports.seed = async function (knex) {
       address: "123 Heart Avenue, Cityville",
       rating: 4.7,
       bio: "Dr. John Smith is a renowned cardiologist with over 15 years of experience...",
-      image: "path/to/image1.jpg", // Placeholder image path
+      image: "/docimages/doc-2.jpg", // Placeholder image path
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ exports.seed = async function (knex) {
       address: "456 Skin Street, Townsville",
       rating: 4.9,
       bio: "Dr. Emily Johnson is a board-certified dermatologist specializing in skincare...",
-      image: "path/to/image2.jpg", // Placeholder image path
+      image: "/docimages/doc-1.jpg", // Placeholder image path
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ exports.seed = async function (knex) {
       address: "789 Bone Road, Jointsville",
       rating: 4.5,
       bio: "Dr. Michael Brown is an orthopedic surgeon known for his expertise in joint replacements...",
-      image: "path/to/image3.jpg", // Placeholder image path
+      image: "/docimages/doc-3.jpg", // Placeholder image path
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ exports.seed = async function (knex) {
       address: "789 Kids Lane, Childville",
       rating: 4.8,
       bio: "Dr. Maria Rodriguez is a compassionate pediatrician dedicated to children's well-being...",
-      image: "path/to/image4.jpg", // Placeholder image path
+      image: "/docimages/doc-1.jpg", // Placeholder image path
     },
     {
       id: 5,
@@ -49,7 +49,7 @@ exports.seed = async function (knex) {
       address: "234 Vision Road, Eyeville",
       rating: 4.6,
       bio: "Dr. David Chen is an ophthalmologist committed to improving vision health...",
-      image: "path/to/image5.jpg", // Placeholder image path
+      image: "/docimages/doc-4.jpg", // Placeholder image path
     },
     {
       id: 6,
@@ -58,7 +58,7 @@ exports.seed = async function (knex) {
       address: "567 Mind Avenue, Psychotown",
       rating: 4.9,
       bio: "Dr. Amanda White is a psychiatrist with a holistic approach to mental health...",
-      image: "path/to/image6.jpg", // Placeholder image path
+      image: "/docimages/doc-1.jpg", // Placeholder image path
     },
     {
       id: 7,
@@ -67,7 +67,7 @@ exports.seed = async function (knex) {
       address: "876 Smile Street, Toothville",
       rating: 4.5,
       bio: "Dr. Robert Taylor is a skilled dentist focused on oral health and hygiene...",
-      image: "path/to/image7.jpg", // Placeholder image path
+      image: "/docimages/doc-5.jpg", // Placeholder image path
     },
     {
       id: 8,
@@ -76,7 +76,7 @@ exports.seed = async function (knex) {
       address: "123 Health Road, Careville",
       rating: 4.7,
       bio: "Dr. Sarah Johnson is a family medicine practitioner dedicated to comprehensive healthcare...",
-      image: "path/to/image8.jpg", // Placeholder image path
+      image: "/docimages/doc-1.jpg", // Placeholder image path
     },
     {
       id: 9,
@@ -85,7 +85,7 @@ exports.seed = async function (knex) {
       address: "987 Women's Avenue, Maternitytown",
       rating: 4.6,
       bio: "Dr. Jane Wilson is a dedicated gynecologist with a passion for women's health...",
-      image: "path/to/image9.jpg", // Placeholder image path
+      image: "/docimages/doc-6.jpg", // Placeholder image path
     },
   ]);
 };

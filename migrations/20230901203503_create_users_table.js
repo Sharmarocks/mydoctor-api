@@ -3,14 +3,13 @@
  * @returns { Promise<void> }
  */
 exports.up = function (knex) {
-  return knex.schema.createTable("doctors", (table) => {
+  return knex.schema.createTable("users", (table) => {
     table.increments("id").primary();
-    table.string("name").notNullable();
-    table.string("specialization").notNullable();
-    table.string("address", 255).notNullable();
-    table.decimal("rating").notNullable();
-    table.text("bio").notNullable();
-    table.text("image");
+    table.string("firstname").notNullable();
+    table.string("lastname").notNullable();
+    table.string("email").notNullable();
+    table.string("phone").notNullable();
+    table.string("password").notNullable();
 
     table.timestamp("created_at").defaultTo(knex.fn.now());
     table
@@ -24,5 +23,5 @@ exports.up = function (knex) {
  * @returns { Promise<void> }
  */
 exports.down = function (knex) {
-  return knex.schema.dropTable("doctors");
+  return knex.schema.dropTable("users");
 };
