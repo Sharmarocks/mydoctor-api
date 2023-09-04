@@ -3,7 +3,7 @@ const bookingsController = require("../controller/bookings-controller");
 
 router
   .route("/")
-  .get(bookingsController.bookingList)
-  .post(bookingsController.addBooking);
+  .post(bookingsController.addBooking)
+  .get(bookingsController.bookingList);
 
 module.exports = router;
