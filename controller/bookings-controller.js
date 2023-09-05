@@ -17,7 +17,7 @@ const addBooking = (req, res) => {
     user_email: user_email,
     doctor_id: doctor_id,
     doctor_name: doctor_name,
-    booking_datetime: new Date(`${date}T${time}:00Z`),
+    booking_datetime: new Date(`${date} ${time}`),
   };
 
   knex("bookings")
