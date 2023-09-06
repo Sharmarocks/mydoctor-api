@@ -3,7 +3,6 @@ const knex = require("knex")(require("../knexfile"));
 //make a new appointment
 
 const addBooking = (req, res) => {
-  // const { userDetails, doctorDetail, date, time } = req.body;
   const { user_id, user_name, user_email, doctor_id, doctor_name, date, time } =
     req.body;
 
@@ -22,7 +21,7 @@ const addBooking = (req, res) => {
 
   knex("bookings")
     .insert(bookingData)
-    .returning("*")
+
     .then((createdBooking) => {
       if (createdBooking.length > 0) {
         res.status(201).json(createdBooking[0]);

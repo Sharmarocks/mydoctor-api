@@ -55,7 +55,7 @@ const addDoctor = (req, res) => {
     })
 
     .catch(() => {
-      res.status(500).json({ message: `Unable to create a new user` });
+      res.status(500).json({ message: `Unable to create a new doctor` });
     });
 };
 

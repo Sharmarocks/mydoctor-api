@@ -13,7 +13,7 @@ exports.seed = async function (knex) {
       address: "123 Heart Avenue, Cityville",
       rating: 4.7,
       bio: "Dr. John Smith is a renowned cardiologist with over 15 years of experience...",
-      image: "/docimages/doc-2.jpg", // Placeholder image path
+      image: "/docimages/doc-4.jpg", // Placeholder image path
     },
     {
       id: 2,
