@@ -51,7 +51,28 @@ const bookingList = (req, res) => {
     });
 };
 
+//delete the appointmnet
+
+const deleteAppointment = (req, res) => {
+  knex("bookings")
+    .where({ booking_id: req.params.booking_id })
+    .del()
+    .then((result) => {
+      if (result === 0) {
+        return res.status(400).json({
+          message: `appointment with ID: ${booking_id} to be deleted not found.`,
+        });
+      }
+
+      res.status(204).send();
+    })
+    .catch(() => {
+      res.status(500).json({ message: "Unable to delete appointment" });
+    });
+};
+
 module.exports = {
   addBooking,
   bookingList,
+  deleteAppointment,
 };

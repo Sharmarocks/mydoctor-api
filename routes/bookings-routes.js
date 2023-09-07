@@ -6,4 +6,6 @@ router
   .post(bookingsController.addBooking)
   .get(bookingsController.bookingList);
 
+router.route("/:booking_id").delete(bookingsController.deleteAppointment);
+
 module.exports = router;
