@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
     "migrate": "npx knex migrate:latest",
     "migrate:down": "npx knex migrate:down",
     "migrate:rollback": "npx knex migrate:rollback",
